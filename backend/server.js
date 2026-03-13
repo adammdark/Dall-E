@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { PORT,SERVER_URL,NODE_ENV } from "./config/env.js";  
+import { PORT,NODE_ENV } from "./config/env.js";  
 import connectDB from "./config/db.js";
 import postRoutes from "./routes/postRoutes.js";
 import dalleRoutes from "./routes/dalleRoutes.js";
@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT,async () => {
-    console.log(`Server is running on port ${SERVER_URL}:${PORT} in ${NODE_ENV} mode`);
+    console.log(`Server is running on port:${PORT} in ${NODE_ENV} mode`);
     await connectDB(); 
 });

@@ -1,4 +1,4 @@
-# 🎨 DALL-E 
+# 🎨 DALL-E - An AI Image generator
 
 A full-stack Midjourney/DALL·E inspired web application built with the **MERN stack** that lets users generate stunning AI images using natural language prompts and share them with the community.
 
@@ -88,6 +88,12 @@ cd frontend
 npm install
 npm run dev
 ```
+Create a `.env` file in the `/frontend` directory:
+
+```env
+VITE_BACKEND_URL=your_backend_url
+```
+
 
 The app will be running at `http://localhost:5173`
 
@@ -113,18 +119,6 @@ The app will be running at `http://localhost:5173`
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the project
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add some amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
----
-
 ## 🤝 Acknowledgements
 
 - [Pixazo](https://pixazo.ai/) for the Flux Schnell AI model API
@@ -135,4 +129,4 @@ Contributions are welcome! Here's how:
 ---
 
 <p align="center">Made with ❤️ and a lot of creative prompts</p>
-<p align="center">⭐ **Star this repo** if you find it useful!</p>
+<p align="center">⭐ Star this repo if you find it useful!</p>

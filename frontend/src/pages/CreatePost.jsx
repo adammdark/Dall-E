@@ -22,7 +22,7 @@ const CreatePost = () => {
       try {
 
         setGeneratingImg(true);
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}dalle`,{
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/dalle`,{
           ...options,
           body: JSON.stringify({
             prompt: form.prompt,
@@ -50,7 +50,7 @@ const CreatePost = () => {
       setLoading(true);
       try{
 
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}post`,{
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/post`,{
           ...options,
           body: JSON.stringify(form), 
         });

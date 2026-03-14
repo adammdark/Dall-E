@@ -30,6 +30,7 @@ const CreatePost = () => {
         });
 
         const data = await response.json();
+        console.log(data)
         setForm({ ...form, photo:data.photo });
         
       } catch (error) {

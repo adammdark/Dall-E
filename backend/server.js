@@ -7,13 +7,13 @@ import dalleRoutes from "./routes/dalleRoutes.js";
 
 const app = express();
 
-connectDB(); 
-
 app.use(cors({
   origin: 'https://my-dall-e-lake.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
+connectDB(); 
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({limit: "50mb"}));

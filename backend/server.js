@@ -8,7 +8,7 @@ import dalleRoutes from "./routes/dalleRoutes.js";
 const app = express();
 
 app.use(cors({
-  origin: 'https://my-dall-e-lake.vercel.app',
+  origin: ['https://my-dall-e-lake.vercel.app','http://localhost:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));

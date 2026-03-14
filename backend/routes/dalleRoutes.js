@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { PIXAZO_API_KEY } from "../config/env.js";
+import { config } from "dotenv";
 
+config({path: "./.env"});
 
 const router = Router();
 
@@ -31,7 +32,7 @@ router.route('/').post(async (req, res) => {
             headers: {
                 "Content-Type": "application/json",
                 "Cache-Control": "no-cache",
-                "Ocp-Apim-Subscription-Key": PIXAZO_API_KEY
+                "Ocp-Apim-Subscription-Key": process.env.PIXAZO_API_KEY
             },
             body: JSON.stringify(data)
         });

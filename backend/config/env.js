@@ -5,8 +5,7 @@ config({path: "./.env"});
 export const { 
     PORT, 
     NODE_ENV,
-    DB_URI,
-    PIXAZO_API_KEY,
+    DB_URI
 } = process.env;
 
 

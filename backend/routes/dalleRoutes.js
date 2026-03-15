@@ -39,6 +39,16 @@ router.route('/').post(async (req, res) => {
 
         const imageUrl = await response.json();
 
+        console.log(response);
+
+        if (!result.output) {
+            return res.status(500).json({
+                success: false,
+                message: "Image generation failed",
+                errorDetails: result
+            });
+        }
+
         res.status(201).json({
             success: true,
             photo: imageUrl.output

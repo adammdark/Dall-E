@@ -119,6 +119,15 @@ The app will be running at `http://localhost:5173`
 
 ---
 
+## 📷 Deployment and Live Demo
+
+- This Project was hosted frontend and backend in sepearate platform
+- For frontend - **[Vercel](https://vercel.com/)**
+- For backend - **[Render](https://render.com/)**
+- To see the live demo please click **[here](https://my-dall-e-lake.vercel.app/)**
+
+ --- 
+
 ## 🤝 Acknowledgements
 
 - [Pixazo](https://pixazo.ai/) for the Flux Schnell AI model API

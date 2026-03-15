@@ -47,19 +47,11 @@ router.route('/').post(async (req, res) => {
 
         const imageUrl = await response.json();
 
-        console.log(response);
-
-        if (!response.output) {
-            return res.status(500).json({
-                success: false,
-                message: "Image generation failed",
-                errorDetails: response
-            });
-        }
+        console.log(imageUrl);
 
         if (response.ok && imageUrl && imageUrl.output) {
 
-            console.log("Success! Image URL:", result.output);
+            console.log("Success! Image URL:", imageUrl.output);
 
             return res.status(200).json({
                 success: true,

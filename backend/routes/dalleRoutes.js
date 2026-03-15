@@ -41,11 +41,11 @@ router.route('/').post(async (req, res) => {
 
         console.log(response);
 
-        if (!result.output) {
+        if (!response.output) {
             return res.status(500).json({
                 success: false,
                 message: "Image generation failed",
-                errorDetails: result
+                errorDetails: response
             });
         }
 
